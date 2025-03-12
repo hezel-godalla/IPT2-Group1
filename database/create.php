@@ -3,14 +3,13 @@ session_start();
 include('database.php'); 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = $_POST['id'];
-    $Name = $_POST['Name'];
+    $Nam = $_POST['Nam'];
     $Age = $_POST['Age'];
     $Gender = $_POST['Gender'];
     $Occupation = $_POST['Occupation'];
 
     
-    $sql = "INSERT INTO celebrities (id, Name, Age, Gender, Occupation) VALUES ('$id', 'Name', '$Age', '$Gender', '$Occupation')";
+    $sql = "INSERT INTO celebrities (Nam, Age, Gender, Occupation) VALUES ('$Nam', '$Age', '$Gender', '$Occupation')";
 
     if (mysqli_query($conn, $sql)) {
         $_SESSION['status'] = "created";
