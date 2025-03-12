@@ -1,6 +1,6 @@
 <?php
     $servername = "localhost";
-    $db_name = "IPT2_G1";
+    $db_name = "ipt2_g1";
     $username = "root";
     $password = "";
 
