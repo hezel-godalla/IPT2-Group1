@@ -4,14 +4,14 @@ include('database.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
-    $Name = $_POST['Name'];
+    $Nam = $_POST['Nam'];
     $Age = $_POST['Age'];
     $Gender = $_POST['Gender'];
-    $Celebrities = $_POST['Celebrities'];
+    $Occupation = $_POST['Occupation'];
 
     
     $sql = "UPDATE celebrities SET 
-            Name ='$Name', 
+            Nam ='$Nam', 
             Age ='$Age', 
             Gender ='$Gender', 
             Occupation ='$Occupation' 
