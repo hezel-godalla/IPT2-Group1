@@ -58,7 +58,7 @@
                 <?php if ($celebrities->num_rows > 0): ?>
                   <?php while ($row = $celebrities->fetch_assoc()): ?>
                     <tr>
-                      <th scope="row"><?php echo $row['id']; ?></th>
+                      <td><?php echo $counter++; ?></td>
                       <td><?php echo $row['Nam']; ?></td>
                       <td><?php echo $row['Age']; ?></td>
                       <td><?php echo $row['Gender']; ?></td>
