@@ -3,7 +3,58 @@
   include('partials/header.php');
   include('partials/sidebar.php');
 
-  $sql = "SELECT * FROM celebrities";
+  // Pagination variables
+  $limit = 5; // Number of records per page
+  $page = isset($_GET['page']) ? (int)$_GET['page'] : 1; // Current page
+  $offset = ($page - 1) * $limit; // Offset for SQL query
+
+  // Search functionality
+  $search = "";
+  if (isset($_GET['search'])) {
+      $search = $_GET['search'];
+  }
+
+  // Build SQL query with pagination and search functionality
+  if (!empty($search)) {
+      $sql = "SELECT * FROM celebrities
+              WHERE Nam LIKE '%$search%' 
+              OR Age LIKE '%$search%' 
+              OR Gender LIKE '%$search%' 
+              OR Occupation LIKE '%$search%'
+              LIMIT $offset, $limit";
+  } else {
+      $sql = "SELECT * FROM celebrities LIMIT $offset, $limit";
+  }
+
+  // Debugging: Print the SQL query
+  echo $sql; // This will help you see the actual query being executed
+
+  // Execute the query
+  $result = $conn->query($sql);
+
+  // Check for errors in the query execution
+  if (!$result) {
+      die("Query failed: " . $conn->error);
+  }
+
+  // Get total records for pagination (with or without search)
+  $total_sql = "SELECT COUNT(*) as total FROM celebrities";
+  if (!empty($search)) {
+      $total_sql = "SELECT COUNT(*) as total FROM celebrities 
+                    WHERE Nam LIKE '%$search%' 
+                    OR Age LIKE '%$search%' 
+                    OR Gender LIKE '%$search%' 
+                    OR Occupation LIKE '%$search%'";
+  }
+
+  // Get the total number of records
+  $total_result = $conn->query($total_sql);
+  $total_row = $total_result->fetch_assoc();
+  $total_records = $total_row['total'];
+  $total_pages = ceil($total_records / $limit);
+
+  $sql = "SELECT * FROM celebrities LIMIT $limit OFFSET $offset";
+  $result = $conn->query($sql);
 
   if (!empty($_GET['search'])) {
       $search = $_GET['search'];
@@ -58,7 +109,7 @@
                 <?php if ($celebrities->num_rows > 0): ?>
                   <?php while ($row = $celebrities->fetch_assoc()): ?>
                     <tr>
-                      <td><?php echo $counter++; ?></td>
+                    <th scope= "row" ><?php echo $row['id']; ?></th>
                       <td><?php echo $row['Nam']; ?></td>
                       <td><?php echo $row['Age']; ?></td>
                       <td><?php echo $row['Gender']; ?></td>
@@ -181,6 +232,23 @@
     </div>
   </section>
 
+<!-- Pagination Links -->
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>">
+            <a class="page-link" href="?page=<?= $page - 1 ?>&search=<?= urlencode($search) ?>">Previous</a>
+        </li>
+        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+            <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
+                <a class="page-link" href="?page=<?= $i ?>&search=<?= urlencode($search) ?>"><?= $i ?></a>
+            </li>
+        <?php endfor; ?>
+        <li class="page-item <?= ($page >= $total_pages) ? 'disabled' : '' ?>">
+            <a class="page-link" href="?page=<?= $page + 1 ?>&search=<?= urlencode($search) ?>">Next</a>
+        </li>
+    </ul>
+</nav>
+
 </main><!-- End #main -->
 
                         <!-- Create (Add Celebrities) Modal -->
@@ -219,24 +287,8 @@
                     </div>
                   </div>
 
-                  <div class="mx-4">
-                    <nav aria-label="page navigation example">
-                      <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                      </ul>
-                   </nav>
-                </div>
-            </div>
-                </div>
-                </div>
                 
                 
-
-
 
 
 
