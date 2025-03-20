@@ -82,6 +82,7 @@
     </nav>
   </div><!-- End Page Title -->
 
+  
   <section class="section">
     <div class="row">
       <div class="col-lg-12">
@@ -90,7 +91,10 @@
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <h5 class="card-title">Celebrities List</h5>
-              <button class="btn btn-primary btn-sm mt-4 mx-3" data-bs-toggle="modal" data-bs-target="#addCelebritiesModal">Add Celebrities</button>
+              <button style="background-color:black; color: white; padding: 5px 10px; border: none; border-radius: 5px; margin-top: 20px;"
+        data-bs-toggle="modal" data-bs-target="#addcelebritiesModal">
+       Add Celebrities
+    </button>
             </div>
 
             <!-- Default Table -->
@@ -116,7 +120,10 @@
                       <td><?php echo $row['Occupation']; ?></td>
                       <td class="d-flex justify-content-center">
                         <!-- Edit Button -->
-                        <button class="btn btn-success btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#editModal<?php echo $row['id']; ?>">Edit</button>
+                        <button style="background-color:black; color: white; padding: 5px 10px; border: none; border-radius: 5px; margin-right: 5px;""
+        data-bs-toggle="modal" data-bs-target="#editModal<?php echo $row['id']; ?>">
+        Edit
+    </button>
 
                         <!-- Edit Modal -->
                         <div class="modal fade" id="editModal<?php echo $row['id']; ?>" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
@@ -157,7 +164,10 @@
 
 
                             <!-- View Button -->
-                            <button class="btn btn-primary btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#ViewModal<?php echo $row['id']; ?>">View</button>
+                            <button style="background-color:rgb(96, 93, 93); color: white; padding: 5px 10px; border: none; border-radius: 5px; margin-right: 5px;""
+        data-bs-toggle="modal" data-bs-target="#ViewModal<?php echo $row['id']; ?>">
+        View
+    </button>
 
                             <!-- View Modal -->
                             <div class="modal fade" id="ViewModal<?php echo $row['id']; ?>" tabindex="-1" aria-labelledby="ViewModalLabel" aria-hidden="true">
@@ -194,7 +204,10 @@
 
 
                         <!-- Delete Button -->
-                        <button class="btn btn-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $row['id']; ?>">Delete</button>
+                        <button style="background-color:red; color:white; padding: 5px 10px; border: none; border-radius: 5px;"
+        data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $row['id']; ?>">
+        Delete
+    </button>
 
                         <!-- Delete Modal -->
                         <div class="modal fade" id="deleteModal<?php echo $row['id']; ?>" data-bs-backdrop="static" tabindex="-1" aria-labelledby="deleteLabel" aria-hidden="true">
