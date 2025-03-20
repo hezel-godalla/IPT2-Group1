@@ -16,7 +16,7 @@ BACKGROUND COLOR
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f5d2d2;
+  background: #ffffff;
   color: #606362;
 }
 
@@ -382,7 +382,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #823c37;
+  background-color: #0e0e0e;
   padding-left: 20px; 
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -611,7 +611,7 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #df8f8f transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color: #be6363;
+  background-color: #574e4e;
 }
 
 @media (max-width: 1199px) {
@@ -1016,14 +1016,14 @@ h6 {
 .profile .profile-card .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: rgb(255, 255, 255);
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .profile .profile-card .social-links a:hover {
-  color: #012970;
+  color: #faf7f7;
 }
 
 .profile .profile-overview .row {
@@ -1032,12 +1032,12 @@ h6 {
 }
 
 .profile .profile-overview .card-title {
-  color: #012970;
+  color: #ffffff;
 }
 
 .profile .profile-overview .label {
   font-weight: 600;
-  color: rgba(1, 41, 112, 0.6);
+  color:  rgba(241, 246, 255, 0.6);
 }
 
 .profile .profile-edit label {
