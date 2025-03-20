@@ -15,17 +15,17 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
+  background: #babdbc;
+  color: #606362;
 }
 
 a {
-  color: #4154f1;
+  color: #056b3f;
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: #8f8f8f;
   text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #012970;
+  color: #2f413b;
 }
 
 /*--------------------------------------------------------------
@@ -381,7 +381,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: #bfa377;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -610,7 +610,7 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: #eed8b2;
 }
 
 @media (max-width: 1199px) {
