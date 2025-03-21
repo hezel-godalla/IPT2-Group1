@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <title>Login</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets\img\milktea logo.png" rel="icon">
+  <link href="assets\img\milktea logo.png" rel="Milktea Logo">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -50,8 +50,8 @@
 
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                  <img src="assets\img\milktea logo.png" alt="Celebrity Logo">
+                  <span class="d-none d-lg-block">Celebrity Information Management System</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -69,7 +69,11 @@
                     <div class="col-12">
                       <label for="yourUsername" class="form-label">Username</label>
                       <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <span class="input-group-text" id="inputGroupPrepend">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        </span>
                         <input type="text" name="username" class="form-control" id="yourUsername" required>
                         <div class="invalid-feedback">Please enter your username.</div>
                       </div>
@@ -77,8 +81,15 @@
 
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
+                      <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
+                      </svg>
+                      </span>
                       <input type="password" name="password" class="form-control" id="yourPassword" required>
                       <div class="invalid-feedback">Please enter your password!</div>
+                    </div>
                     </div>
 
                     <div class="col-12">
@@ -88,10 +99,10 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                    <a href="index.php" button class="btn btn-primary w-100" type="submit">Login</button></a>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
+                      <p class="text-center medium">Don't have account? <a href="register.php">Create an account</a></p>
                     </div>
                   </form>
 
@@ -133,3 +144,4 @@
 </body>
 
 </html>
+fonts.gstatic.com
