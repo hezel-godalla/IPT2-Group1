@@ -156,12 +156,12 @@ function togglePassword() {
     const toggleIcon = event.target;
 
     if (passwordField.type === "password") {
-        passwordField.type = "text"; // Show password
-        toggleIcon.textContent = "✓"; // Checkmark (visible)
-    } else {
-        passwordField.type = "password"; // Hide password
-        toggleIcon.textContent = "✕"; // X (hidden)
-    }
+    passwordField.type = "text"; // Show password
+    toggleIcon.textContent = "🙉"; // Eye icon (visible)
+} else {
+    passwordField.type = "password"; // Hide password
+    toggleIcon.textContent = "🙈"; // Eye with strikethrough (hidden)
+}
 }
 </script>
 
