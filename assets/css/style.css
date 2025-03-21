@@ -385,7 +385,6 @@ h6 {
   background-color: #0e0e0e;
   padding-left: 20px; 
   /* Toggle Sidebar Button */
-  
   /* Search Bar */
 }
 
@@ -431,7 +430,7 @@ h6 {
   border: 0;
   font-size: 14px;
   color: #0b0909;
-  border: 1px solid rgba(192, 196, 205, 0.2);
+  border: 1px solid rgba(1, 41, 112, 0.2);
   padding: 7px 38px 7px 8px;
   border-radius: 3px;
   transition: 0.3s;
@@ -442,7 +441,7 @@ h6 {
 .header .search-form input:hover {
   outline: none;
   box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
-  border: 1px solid rgb(200, 203, 210);
+  border: 1px solid rgba(1, 41, 112, 0.3);
 }
 
 .header .search-form button {
@@ -1224,12 +1223,12 @@ h6 {
 
 .footer .copyright {
   text-align: center;
-  color: #012970;
+  color: #1c1d1d;
 }
 
 .footer .credits {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #012970;
+  color: #242525;
 }
