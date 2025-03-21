@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="assets\img\c_logo.png" rel="icon">
-  <link href="\img\c_logo.png" rel="Celebrity Logo">
+  <link href="assets\img\c_logo.png" rel="Celebrity Logo">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
