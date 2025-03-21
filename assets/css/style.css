@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  color: #ffc800;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #3e3317;
+  color: #020202;
 }
 
 /*--------------------------------------------------------------
@@ -78,7 +78,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #e7dcbc;
+  background: #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -87,13 +87,13 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #ffb60d;
+  color: #696866;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #6776f4;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
 }
 
 .back-to-top.active {
@@ -112,7 +112,7 @@ h6 {
   animation-duration: 0.2s;
   animation-fill-mode: both;
   border: 0;
-  box-shadow: 0 5px 30px 0 rgb(152, 9, 9);
+  box-shadow: 0 5px 30px 0 rgb(58, 57, 57);
 }
 
 .dropdown-menu .dropdown-header,
@@ -183,8 +183,8 @@ h6 {
 
 /* Light Backgrounds */
 .bg-primary-light {
-  background-color: #cfe2ff;
-  border-color: #cfe2ff;
+  background-color: #96989b;
+  border-color: #ffffff;
 }
 
 .bg-secondary-light {
@@ -295,7 +295,7 @@ h6 {
 
 .accordion-flush .accordion-button:not(.collapsed) {
   box-shadow: none;
-  color: #4154f1;
+  color: #424248;
 }
 
 .accordion-flush .accordion-body {
@@ -326,7 +326,7 @@ h6 {
 }
 
 .breadcrumb .active {
-  color: #51678f;
+  color: #535966;
   font-weight: 600;
 }
 
@@ -343,13 +343,13 @@ h6 {
 
 .nav-tabs-bordered .nav-link:hover,
 .nav-tabs-bordered .nav-link:focus {
-  color: #4154f1;
+  color: #000000;
 }
 
 .nav-tabs-bordered .nav-link.active {
-  background-color: #fff;
-  color: #4154f1;
-  border-bottom: 2px solid #4154f1;
+  background-color: #4b4545;
+  color: #6e6e72;
+  border-bottom: 2px solid #fafafd;
 }
 
 /*--------------------------------------------------------------
@@ -429,7 +429,7 @@ h6 {
 .header .search-form input {
   border: 0;
   font-size: 14px;
-  color: #6f2020;
+  color: #0b0909;
   border: 1px solid rgba(1, 41, 112, 0.2);
   padding: 7px 38px 7px 8px;
   border-radius: 3px;
@@ -452,7 +452,7 @@ h6 {
 }
 
 .header .search-form button i {
-  color: #836161;
+  color: #312e2e;
 }
 
 /*--------------------------------------------------------------
@@ -469,13 +469,13 @@ h6 {
 
 .header-nav .nav-icon {
   font-size: 22px;
-  color: #012970;
+  color: #000000;
   margin-right: 25px;
   position: relative;
 }
 
 .header-nav .nav-profile {
-  color: #012970;
+  color: #37393b;
 }
 
 .header-nav .nav-profile img {
@@ -806,7 +806,7 @@ h6 {
 
 .dashboard .info-card h6 {
   font-size: 28px;
-  color: #012970;
+  color: #717376;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -822,7 +822,7 @@ h6 {
 }
 
 .dashboard .sales-card .card-icon {
-  color: #4154f1;
+  color: #000000;
   background: #f6f6fe;
 }
 
@@ -1092,7 +1092,7 @@ h6 {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #514b49;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
