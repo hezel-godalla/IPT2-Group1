@@ -109,6 +109,23 @@
                 </div>
               </div>
 
+              <!-- JavaScript to change styles dynamically -->
+           <script>
+                document.querySelector(".btn-primary").style.backgroundColor = "gray";
+                document.querySelector("h5.card-title").style.color = "black";
+                document.querySelectorAll("input").forEach(input => {
+               input.style.backgroundColor = "white";
+                 });
+                  document.querySelector(".card").style.backgroundColor = "lightgray";
+           </script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
               <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
