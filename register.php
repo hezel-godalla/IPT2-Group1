@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="password">Password</label>
     <input type="password" name="password" id="password" class="form-control" placeholder="Password" required style="width: 100%; padding-right: 40px;">
     <span onclick="togglePassword()" id="toggleIcon" style="position: absolute; right: 30px; top: 62%; transform: translateY(-50%); cursor: pointer; font-size: 1.2rem;">
-        ✓ <!-- Checkmark icon for "visible" -->
+         <!-- Checkmark icon for "visible" -->
     </span>
                 <div class="invalid-feedback">Please enter your password!</div>
             </div>
