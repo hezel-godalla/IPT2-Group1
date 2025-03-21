@@ -133,11 +133,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!-- Display Success or Error Messages -->
 <?php if (!empty($success)): ?>
-    <div style="color: green;"><?php echo $success; ?></div>
+    <div style="color: gray;"><?php echo $success; ?></div>
 <?php endif; ?>
 
 <?php if (!empty($error)): ?>
-    <div style="color: red;"><?php echo $error; ?></div>
+    <div style="color: black"><?php echo $error; ?></div>
 <?php endif; ?>
 
 <script>
