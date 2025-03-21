@@ -50,7 +50,7 @@
 
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="" alt="Celebrity Logo">
+                  <img src="assets\img\c_logo.png" alt="Celebrity Logo">
                   <span class="d-none d-lg-block">Celebrity Information Management System</span>
                 </a>
               </div><!-- End Logo -->

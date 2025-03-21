@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets\img\milktea logo.png" rel="icon">
-  <link href="assets\img\milktea logo.png" rel="Milktea Logo">
+  <link href="assets\img\c_logo.png" rel="icon">
+  <link href="assets\img\c_logo.png" rel="Celebrity Logo">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -50,7 +50,7 @@
 
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="assets\img\milktea logo.png" alt="Celebrity Logo">
+                  <img src="assets\img\c_logo.png" alt="Celebrity Logo">
                   <span class="d-none d-lg-block">Celebrity Information Management System</span>
                 </a>
               </div><!-- End Logo -->
