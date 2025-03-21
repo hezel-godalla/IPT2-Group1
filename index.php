@@ -245,22 +245,35 @@
     </div>
   </section>
 
-<!-- Pagination Links -->
+<!-- Page navigation -->
 <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-        <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>">
-            <a class="page-link" href="?page=<?= $page - 1 ?>&search=<?= urlencode($search) ?>">Previous</a>
-        </li>
-        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-            <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
-                <a class="page-link" href="?page=<?= $i ?>&search=<?= urlencode($search) ?>"><?= $i ?></a>
-            </li>
+        <ul class="pagination justify-content-center">
+                  <!-- Previous Button -->
+             <a class="page-link" href="?page=<?= max(1, $page - 1) ?>&search=<?= urlencode($search) ?>" 
+               style="background-color: rgb(5, 6, 6); color: white; padding: 10px 20px; border-radius: 5px;">
+               Previous
+             </a>
+             <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+            <li class="page-item <?= ($page == $i) ? 'active' : '' ?>" style="margin: 0 3px; border-radius: 5px;">
+               <a class="page-link" href="?page=<?= $i ?>&search=<?= urlencode($search) ?>" 
+                  style="background-color: <?= ($page == $i) ? 'lightgray' : 'transparent' ?>; 
+                 color: <?= ($page == $i) ? 'white' : 'blue' ?>; padding: 10px 15px; 
+                  display: inline-block; text-decoration: ; border-radius: 5px; border: none;">
+           <?= $i ?>
+        </a>
+    </li>
         <?php endfor; ?>
+        <!-- Next Button -->
         <li class="page-item <?= ($page >= $total_pages) ? 'disabled' : '' ?>">
-            <a class="page-link" href="?page=<?= $page + 1 ?>&search=<?= urlencode($search) ?>">Next</a>
+            <a class="page-link" href="?page=<?= min($total_pages, $page + 1) ?>&search=<?= urlencode($search) ?>" 
+               style="background-color: rgb(5, 6, 6); color: white; padding: 10px 20px; border-radius: 5px;">
+               Next
+            </a>
         </li>
     </ul>
-</nav>
+
+
+
 
 </main><!-- End #main -->
 
