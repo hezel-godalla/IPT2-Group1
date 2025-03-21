@@ -90,7 +90,7 @@
         <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between">
-              <h5 class="card-title">Celebrities List</h5>
+            <h5 class="card-title" style="color: Black;">Celebrities List</h5>
               <button style="background-color:black; color: white; padding: 5px 10px; border: none; border-radius: 5px; margin-top: 20px;"
         data-bs-toggle="modal" data-bs-target="#addcelebritiesModal">
        Add Celebrities
@@ -248,8 +248,9 @@
 <!-- Pagination Links -->
 <nav aria-label="Page navigation">
     <ul class="pagination justify-content-center">
-        <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>">
-            <a class="page-link" href="?page=<?= $page - 1 ?>&search=<?= urlencode($search) ?>">Previous</a>
+    <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>" style="color: red; background-color: lightgray;">
+    <a class="page-link" href="?page=<?= $page - 1 ?>&search=<?= urlencode($search) ?>" class="btn-primary" style="background-color:rgb(5, 6, 6); color: white; padding: 10px 20px; border-radius: 5px;">
+            Previous</button></a>
         </li>
         <?php for ($i = 1; $i <= $total_pages; $i++): ?>
             <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
@@ -257,10 +258,12 @@
             </li>
         <?php endfor; ?>
         <li class="page-item <?= ($page >= $total_pages) ? 'disabled' : '' ?>">
-            <a class="page-link" href="?page=<?= $page + 1 ?>&search=<?= urlencode($search) ?>">Next</a>
+            <a class="page-link" href="?page=<?= $page + 1 ?>&search=<?= urlencode($search) ?>"style="background-color:rgb(5, 6, 6); color: white; padding: 10px 20px; border-radius: 5px;">
+            next</button></a>
         </li>
     </ul>
 </nav>
+
 
 </main><!-- End #main -->
 
