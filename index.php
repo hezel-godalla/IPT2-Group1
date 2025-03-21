@@ -256,8 +256,8 @@
              <?php for ($i = 1; $i <= $total_pages; $i++): ?>
             <li class="page-item <?= ($page == $i) ? 'active' : '' ?>" style="margin: 0 3px; border-radius: 5px;">
                <a class="page-link" href="?page=<?= $i ?>&search=<?= urlencode($search) ?>" 
-                  style="background-color: <?= ($page == $i) ? 'gray' : 'transparent' ?>; 
-                  color: <?= ($page == $i) ? 'white' : 'blue' ?>; padding: 10px 15px; 
+                  style="background-color: <?= ($page == $i) ? 'lightgray' : 'transparent' ?>; 
+                 color: <?= ($page == $i) ? 'white' : 'blue' ?>; padding: 10px 15px; 
                   display: inline-block; text-decoration: ; border-radius: 5px; border: none;">
            <?= $i ?>
         </a>
