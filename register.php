@@ -131,6 +131,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </div>
 
+              <!-- JavaScript to change styles dynamically -->
+              <script>
+                document.querySelector(".btn-primary").style.backgroundColor = "gray";
+                document.querySelector("h5.card-title").style.color = "black";
+                document.querySelectorAll("input").forEach(input => {
+               input.style.backgroundColor = "white";
+                 });
+                  document.querySelector(".card").style.backgroundColor = "lightgray";
+           </script>
+
 <!-- Display Success or Error Messages -->
 <?php if (!empty($success)): ?>
     <div style="color: gray;"><?php echo $success; ?></div>
